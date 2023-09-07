@@ -20,7 +20,7 @@ $(function () {
                 crossDomain: true,
                 headers: {
                     'Access-Control-Allow-Origin': '*',
-                    'Access-Control-Allow-Methods: POST'
+                    'Access-Control-Allow-Methods': 'POST',
                 },
                 data: {
                     name: name,

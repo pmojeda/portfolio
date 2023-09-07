@@ -17,7 +17,9 @@ $(function () {
             $.ajax({
                 url: "https://formspree.io/f/mrgwkrkq",
                 type: "POST",
+                dataType: 'jsonp',
                 CORS: true,
+                contentType:'application/json',
                 secure: true,
                 headers: {
                     'Access-Control-Allow-Origin': '*',

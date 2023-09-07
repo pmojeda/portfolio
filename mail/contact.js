@@ -18,12 +18,8 @@ $(function () {
                 url: "https://formspree.io/f/mrgwkrkq",
                 type: "POST",
                 CORS: true,
-                secure: true,
                 headers: {
                     'Access-Control-Allow-Origin': '*',
-                },
-                beforeSend: function (xhr) {
-                    xhr.setRequestHeader ("Authorization", "Basic " + btoa(""));
                 },
                 data: {
                     name: name,

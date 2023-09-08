@@ -13,14 +13,11 @@ $(function () {
 
             $this = $("#sendMessageButton");
             $this.prop("disabled", true);
-
+		
             $.ajax({
                 url: "https://formspree.io/f/mrgwkrkq",
-                type: "POST",
-                crossDomain: true,
-                headers: {
-                    'Access-Control-Allow-Origin': '*',
-                },
+                method: "POST",
+				dataType: "json",
                 data: {
                     name: name,
                     email: email,
@@ -52,6 +49,7 @@ $(function () {
                     }, 1000);
                 }
             });
+			
         },
         filter: function () {
             return $(this).is(":visible");
